@@ -22,14 +22,12 @@ class MainActivity : AppCompatActivity() {
     val API: String = "29ce07b6457ed3fa2eb37330c490be99"
     private lateinit var handler: Handler
     private lateinit var runnable: Runnable
-//    lateinit var refreshLayout: SwipeRefreshLayout
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-//        refreshLayout = findViewById(R.id.refreshLayout)
+        
         handler = Handler()
 
         weatherTask().execute()
